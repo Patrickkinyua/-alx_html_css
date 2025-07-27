@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url("./assets images/Object.png");
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 10px 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;  /* adds space between list items */
+}
+
+nav ul li {
+    padding: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-family: source-sans-pro, sans-serif;
+    font-weight: 600;
+}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    min-height: 80vh;  /* This ensures vertical centering */
+    width: 100%;       /* Takes full width of the container */
+    position: relative;/* Helps with absolute positioning if needed */
+}
+
+/* Style the hero content elements */
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.hero-content span {
+    color: white;
+    margin: 5px 0;
+}
+
+.hero-content button {
+    margin-top: 20px;
+}
+.hero-text {
+    display: flex;
+    gap: 10px;
+    margin-top: 3px;
+}
+.hero-content button {
+    padding: 10px 20px;
+    color: white;
+    background-color: #d193ff; /* Bootstrap primary color */
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.hero-banner {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+.hero-banner-highlight {
+    color: #d193ff; /* Bootstrap primary color */
+}
+.soy-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 50px;
+    gap: 20px; /* Adds space between the two sections */
+    border-bottom: 1px solid hwb(274 58% 0%); /* Adds a bottom border */
+    padding-bottom: 20px; /* Adds padding below the content */
+} 
+.soy h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.soy p {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 20px;
+    text-transform: italic;
+}
+.testimonial {
+   background-color:#d193ff;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+   border-radius: 10px;
+   margin: 20px 0;
+   color: white;
+   gap: 20px; /* Adds space between the image and the text */
+} ;
+.popular-tutorials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    background-color: white;
+
+}
+.popular-tutorials h2 {
+    font-size: 2rem;
+    color: black; /* Bootstrap primary color */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.video-cards {
+    display: flex;
+
+}
+.video-cards h4 {
+    color: #d193ff;
+}
+.membership {
+    
+    background-color: #071629;
+    color: white;
+    margin-bottom: 50px;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: row;
+    display: flex;
+}
+.membership-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; /* Adds space between the membership cards */
+}
+
+.membership h2 {  /* Makes h2 take full width */
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 300;
+    /* Moves h2 to top */
+}
+
+.membership button {  /* Makes button take full width */
+    padding: 10px 20px;
+    color: white;
+    background-color: #d193ff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+   
+
+/* Other membership items will stay in a row */
+.membership > *:not(h2):not(button) {
+    flex: 1;
+}
+.faq {
+    background-color: whitesmoke;
+    color: black;
+    padding: 20px;
+    margin-bottom: 50px;
+}
